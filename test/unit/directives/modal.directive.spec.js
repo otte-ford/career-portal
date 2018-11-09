@@ -4,13 +4,21 @@ describe('Directive: CareerPortalModal', () => {
             $provide.constant('configuration', {
                 someUrl: '/dummyValue',
                 service: {corpToken: 1, port: 1, swimlane: 1},
-                integrations: {linkedin: ''},
-                acceptedResumeTypes: []
+                acceptedResumeTypes: [],
+                privacyConsent: {
+                    consentCheckbox: true,
+                    privacyStatementParagraphs: [
+                        "[FIRST PARAGRAPH]",
+                        "[SECOND PARAGRAPH]"
+                    ],
+                    privacyPolicyUrl: '',
+                    usePrivacyPolicyUrl: false
+                }
             });
         });
     });
-
     // load the controller's module
+
     beforeEach(angular.mock.module('CareerPortal'));
 
     let $compile,

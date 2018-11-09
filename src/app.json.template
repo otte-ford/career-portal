@@ -24,21 +24,26 @@
         "port": null,
         "swimlane": "[ SWIMLANE HERE ]"
     },
-    "integrations": {
-        "linkedin": {
-            "clientId": "[ CLIENTID HERE ]"
-        }
-    },
     "additionalJobCriteria": {
         "field": "[ FILTER FIELD HERE ]",
         "values": [
             "[ FILTER VALUE HERE ]"
-        ]
+        ],
+        "sort": "-dateLastPublished"
     },
     "defaultGridState": "list-view",
     "eeoc": {
         "genderRaceEthnicity": false,
         "veteran": false,
         "disability": false
+    },
+    "privacyConsent": {
+        "consentCheckbox": false,
+        "privacyStatementParagraphs": [
+            "[FIRST PARAGRAPH]",
+            "[SECOND PARAGRAPH]"
+        ],
+        "privacyPolicyUrl": "",
+        "usePrivacyPolicyUrl": false
     }
 }
